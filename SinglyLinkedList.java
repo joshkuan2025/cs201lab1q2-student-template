@@ -68,11 +68,11 @@ public class SinglyLinkedList<E> {
 
     // Write your codes below
     public String toString() {
-        if (isEmpty() || head == null) {
-            return null;
-        }
-
         String result = "";
+
+        if (isEmpty()) {
+            return result;
+        }
 
         Node ptr = head;
         while (ptr.getNext() != null) {
