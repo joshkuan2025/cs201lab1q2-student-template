@@ -127,7 +127,7 @@ public class SinglyLinkedList<E> {
 
         head = stack[indx];
         ptr = head;
-        System.out.println(head.getElement());
+        
         for (int i = indx - 1; i >= 0; i--) {
             ptr.setNext(stack[i]);
             ptr = ptr.getNext();
