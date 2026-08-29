@@ -110,6 +110,8 @@ public class SinglyLinkedList<E> {
 
     public void reverse() {
         if (isEmpty()) {
+            head = null;
+            tail = null;
             return;
         }
 
